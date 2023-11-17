@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Travel Blog</title>
+        <link href="style.css" rel="stylesheet">
+        <link rel="icon" href="travel1.png">
+        <style>
+            
+        </style>
+    </head>
+    <body>
+        <header class="header">
+          <img src="img/travel.png" style="height: 100px;width: 100px; padding-left: 100px;">
+            <a href="#" class="logo">Life is short and the world is wide </a>
+            <nav class="nav-items">
+              <a href="index.html">Home</a>
+              <a href="blog.html">Blog </a>
+              <a href="destination.html">Destinations</a>
+              <a href="map.html">Map</a>
+              <a href="galleries.html">Gallery</a>
+              <a href="about.html">About</a>
+              <a href="#">Contact</a>
+            </nav>
+          </header>
+          <div class="con">
+            <h1>CONTACT</h1>
+            <p>Send Me Your Comments or Suggestion</p>
+          </div>
+             <div class="ji">
+              <h1><b>--------------------------------------CONNECT WITH ME--------------------------------------</b></h1>
+              <h2>Sometimes I'm Busy in Travelling,but I Try to Respond !</h2>
+             </div>
+      </div>
+        <form>
+            <div class="ak">
+                <label>First Name:</label><br>
+                <input type="text" name="fname" id="fname" class="tab" placeholder="firstname" required><br>
+                <label>Last Name:</label><br>
+                <input type="text" name="lname" class="tab" placeholder="lastname"><br>
+                <label>Email:</label><br>
+                <input type="email" name="mail" id="mail" class="tab" placeholder="email" required><br>
+                <label>Your Valuable Comments:</label><br>
+                <textarea placeholder="message here" class="tab" name="message" id="message" style="height: 60px;" required></textarea><br>
+                <input type="submit" name="submit1" id="submit" value="SUBMIT" onclick="fun()">
+            </div>
+        </form>
+        
+        <script>
+            function fun() {
+                var fname = document.getElementById("fname").value;
+                var mail = document.getElementById("mail").value;
+                var message = document.getElementById("message").value;
+        
+                if (fname !== "" && mail !== "" && message !== "") {
+                    window.alert("Your query is successfully submitted.");
+                } else {
+                    window.alert("Please fill in all required fields.");
+                }
+            }
+        </script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet"> 
+        </head>
+        <body>
+        <footer>
+        <div class="footer">
+        <div class="row">
+        <a href="#https://www.instagram.com/_akram_javed_55/"><i class="fa fa-facebook"></i></a>
+        <a href="https://www.instagram.com/_akram_javed_55/"><i class="fa fa-instagram"></i></a>
+        <a href="#https://www.instagram.com/_akram_javed_55/"><i class="fa fa-youtube"></i></a>
+        <a href="#https://www.instagram.com/_akram_javed_55/"><i class="fa fa-twitter"></i></a>
+        </div>
+        
+        <div class="row">
+        <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="destination.html">Destination</a></li>
+        <li><a href="map.html">Map</a></li>
+        <li><a href="galleries.html">Gallery</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        </ul>
+        </div>
+        
+        <div class="row">
+         Copyright © 2023 AJ Travelblogs - All rights reserved || Designed By: A.Akram Javed
+        </div>
+        </div>
+        </footer>
+        
+                
+    </body>
+</html>
